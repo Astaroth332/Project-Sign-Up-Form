@@ -2,19 +2,161 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    
 }
 
 body {
     display: flex;
     flex-flow: row wrap;
+    background-color: #e5e7e6;
 }
 
 .logo-section {
+width: 35%;
+height: 100vh; 
+background-image: url('image/tolga-ahmetler-rwnFfBvVd6c-unsplash.jpg');
+background-size: cover; 
+background-position: center; 
+display: flex;
+flex-flow: column wrap;
+justify-content: space-between;
+}
 
-    
+.logo-section-background {
+    background-color: rgba(29, 27, 27, 0.5); ;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    margin-top: 220px;
+}
+
+.logo img {
+    height: 120px;
+    width: 90px;
+    padding-top: 10px;
+}
+
+.logo-text {
+    font-size: 80px;
+    font-family: "Protest Guerrilla", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    word-spacing: 10px;
+    color: white;
+}
+
+
+.background-credit {
+    padding-bottom: 15px;
+}
+
+.background-owner-name {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    color: white;
+    font-size: 1.1em;
+}
+
+.background-owner-name a {
+    color: white;
+}
+
+
+.sign-up-section {
+    flex: 1;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 25px;
+    border: 1px solid black;
+}
+
+.sign-up-heading {
+    padding:170px 380px 20px 50px;
+}
+
+.sign-up-heading h2{
+    font-size: 1.6em;
+    font-family: "Inter", sans-serif;
 }
 
 .sign-up-form {
-    flex: 1;
-    display: flex;
+    padding: 25px 0;
+    background-color: white;
+    color: rgb(87, 85, 85);
 }
+
+.sign-up-form-heading {
+    padding: 20px 50px 20px;
+
+}
+
+.sign-up-form-heading h2 {
+    font-family: "Inter", sans-serif;
+    font-size: 1.5em;
+}
+
+
+.section-row {
+    display: flex;
+    padding-left: 50px;
+    gap: 120px;
+}
+
+.form-row {
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: column wrap;
+    gap: 2px;
+    }
+
+
+.form-row label {
+    font-family: "Inter", sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing:1px ;
+}
+
+.form-row input[type="text"],
+.form-row input[type="email"],
+.form-row input[type="password"] {
+    background-color: #FFFFFF;
+    border: 1px solid #D6D9DC;
+    border-radius: 5px;
+    font-size: 14px;
+    padding: 6px;
+    width: 120%;
+    margin-bottom: 15px;
+}
+
+
+
+.form-row input[type="text"]:focus,
+.form-row input[type="email"]:focus,
+.form-row input[type="password"]:focus {
+    border: 1px solid blue;
+    box-shadow: 0 2px 4px rgb(53, 52, 52);
+}
+
+.form-row input[type="text"]:valid,
+.form-row input[type="email"]:valid,
+.form-row input[type="password"]:valid {
+    border: 1px solid green;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
