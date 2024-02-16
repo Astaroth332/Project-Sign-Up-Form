@@ -9,6 +9,16 @@ body {
     display: flex;
     flex-flow: row wrap;
     background-color: #e5e7e6;
+    font-family: "Inter", sans-serif;
+}
+input {
+    outline: none;
+}
+
+input, button {
+    font-size: 100%;
+    width: 100%;
+
 }
 
 .logo-section {
@@ -29,7 +39,7 @@ justify-content: space-between;
     justify-content: center;
     align-items: center;
     padding: 5px;
-    margin-top: 220px;
+    margin-top: 100px;
 }
 
 .logo img {
@@ -64,45 +74,46 @@ justify-content: space-between;
     color: white;
 }
 
-
 .sign-up-section {
     flex: 1;
     display: flex;
     flex-flow: column wrap;
     gap: 25px;
     border: 1px solid black;
+    height: 100vh;
+ 
 }
 
 .sign-up-heading {
-    padding:170px 380px 20px 50px;
+    padding:10px 280px 0 50px;
 }
 
 .sign-up-heading h2{
-    font-size: 1.6em;
+    font-size: 1.4em;
     font-family: "Inter", sans-serif;
 }
 
 .sign-up-form {
-    padding: 25px 0;
     background-color: white;
     color: rgb(87, 85, 85);
+    box-shadow: 0 2px 5px rgb(58, 57, 57);
 }
 
 .sign-up-form-heading {
-    padding: 20px 50px 20px;
+    padding: 10px 0 10px 50px;
 
 }
 
 .sign-up-form-heading h2 {
     font-family: "Inter", sans-serif;
-    font-size: 1.5em;
+    font-size: 1.4em;
 }
 
 
 .section-row {
     display: flex;
     padding-left: 50px;
-    gap: 120px;
+    gap: 80px;
 }
 
 .form-row {
@@ -110,12 +121,13 @@ justify-content: space-between;
     justify-content: flex-start;
     flex-flow: column wrap;
     gap: 2px;
+    position: relative;
     }
 
 
 .form-row label {
     font-family: "Inter", sans-serif;
-    font-size: 11px;
+    font-size: 10px;
     font-weight: 600;
     letter-spacing:1px ;
 }
@@ -132,31 +144,47 @@ justify-content: space-between;
     margin-bottom: 15px;
 }
 
-
-
-.form-row input[type="text"]:focus,
-.form-row input[type="email"]:focus,
-.form-row input[type="password"]:focus {
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
     border: 1px solid blue;
     box-shadow: 0 2px 4px rgb(53, 52, 52);
 }
 
-.form-row input[type="text"]:valid,
-.form-row input[type="email"]:valid,
-.form-row input[type="password"]:valid {
-    border: 1px solid green;
-
+.submit-button {
+    margin: 12px 0;
+    padding-left: 50px;
+}
+.submit-button button {
+    padding: 7px;
+    width: 30%;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    border-radius: 5px;
+    background-color: rgb(61, 61, 61);
+    color: white;
+ 
 }
 
 
+.submit-button button:active {
+    opacity: .7;
+}
 
+.submit-button button:hover {
+    background-color: white;
+    color: rgb(61, 61, 61) ;
+}
 
+.user-account-status {
+    padding-left: 50px;
+}
 
-
-
-
-
-
-
-
-
+#result-message {
+    margin: 0;
+    padding: 2px 0;
+    font-size: 11px;
+    position: absolute;
+    bottom: 0px;
+    display: inline-block;
+}
